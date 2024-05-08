@@ -2,5 +2,5 @@
 period = "1s"
 terminate_after = 5
 
-# [profile.default]
-# failure-output = "final"
+[profile.default]
+failure-output = "final"
