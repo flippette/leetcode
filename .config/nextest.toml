@@ -1,0 +1,6 @@
+[profile.default.slow-timeout]
+period = "1s"
+terminate_after = 5
+
+# [profile.default]
+# failure-output = "final"

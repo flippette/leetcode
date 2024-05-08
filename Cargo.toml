@@ -1,0 +1,6 @@
+[package]
+name = "leetcode"
+version = "0.1.0"
+edition = "2021"
+authors = ["flippette <quangdatle2006@outlook.com>"]
+license = "Unlicense"
