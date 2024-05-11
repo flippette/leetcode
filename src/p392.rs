@@ -22,7 +22,7 @@ pub fn is_subsequence(s: impl AsRef<str>, t: impl AsRef<str>) -> bool {
 }
 
 tests! {
-    |(s, t)| is_subsequence(s, t),
-    ("abc", "agbgdc") => true,
-    ("axc", "ahbgdc") => false,
+    is_subsequence,
+    "abcx", "agbgdc" => true,
+    "axc", "ahbgdc" => false,
 }

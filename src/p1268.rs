@@ -140,11 +140,8 @@ impl Ord for Node {
 }
 
 tests! {
-    |(products, term)| suggested_products(products, term),
-    (
-        vec!["mobile", "mouse", "moneypot", "monitor", "mousepad"],
-        "mouse"
-    ) => [
+    suggested_products,
+    ["mobile", "mouse", "moneypot", "monitor", "mousepad"], "mouse" => [
         &["mobile", "moneypot", "monitor"][..],
         &["mobile", "moneypot", "monitor"][..],
         &["mouse", "mousepad"][..],

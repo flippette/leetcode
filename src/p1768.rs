@@ -32,8 +32,8 @@ pub fn merge_alternately(
 }
 
 tests! {
-    |(a, b)| merge_alternately(a, b),
-    ("abc", "pqr") => "apbqcr",
-    ("ab", "pqrs") => "apbqrs",
-    ("abcd", "pq") => "apbqcd",
+    merge_alternately,
+    "abc", "pqr" => "apbqcr",
+    "ab", "pqrs" => "apbqrs",
+    "abcd", "pq" => "apbqcd",
 }

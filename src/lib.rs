@@ -1,3 +1,5 @@
+#![allow(unused_variables)]
+
 /// Support macros
 pub(crate) mod macros;
 
@@ -6,6 +8,9 @@ pub mod p14;
 
 /// Longest valid parentheses
 pub mod p32;
+
+/// Sqrt(x)
+pub mod p69;
 
 /// Single number
 pub mod p136;
@@ -39,3 +44,6 @@ pub mod p1732;
 
 /// Merge strings alternately
 pub mod p1768;
+
+/// Smallest number in infinite set
+pub mod p2336;
