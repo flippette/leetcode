@@ -11,6 +11,9 @@ itertools = "0.14"
 rand = "0.8"
 regex = "1"
 
+[dev-dependencies]
+assert_matches = "1.5"
+
 [lints]
 clippy.missing_safety_doc = "forbid"
 rust.unsafe_code = "deny"
