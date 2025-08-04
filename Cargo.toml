@@ -1,0 +1,17 @@
+[package]
+name = "leetcode"
+version = "0.0.0"
+edition = "2024"
+authors = ["flippette <me@flippo.cc>"]
+license = "Unlicense"
+publish = false
+
+[dependencies]
+itertools = "0.14"
+rand = "0.8"
+regex = "1"
+
+[lints]
+clippy.missing_safety_doc = "forbid"
+rust.unsafe_code = "deny"
+rust.unstable_features = "forbid"
