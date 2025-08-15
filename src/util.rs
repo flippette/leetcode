@@ -35,7 +35,8 @@ macro_rules! solution {
 macro_rules! tests {
   (
     $impl:ident,
-    $($name:ident: $($input:expr),* $(,)? => $output:pat),+ $(,)?
+    $($name:ident: $($input:expr),* $(,)?
+      => $output:pat $(if $cond:expr)? $(=> $arm:expr)?),+ $(,)?
   ) => {
     #[cfg(test)]
     mod tests {
@@ -44,7 +45,7 @@ macro_rules! tests {
         fn $name() {
           ::assert_matches::assert_matches!(
             super::$impl($($input),*),
-            $output
+            $output $(if $cond)? $(=> $arm)?
           );
         }
       )+
