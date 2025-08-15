@@ -18,3 +18,7 @@ assert_matches = "1.5"
 clippy.missing_safety_doc = "forbid"
 rust.unsafe_code = "deny"
 rust.unstable_features = "forbid"
+
+[lints.rust.unexpected_cfgs]
+level = "forbid"
+check-cfg = ["cfg(tarpaulin)"]

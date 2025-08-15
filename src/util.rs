@@ -15,12 +15,15 @@ macro_rules! solution {
     }
   ) => {
     #[allow(dead_code)]
+    #[cfg(not(tarpaulin))]
     struct Solution;
+
     #[allow(dead_code)]
+    #[cfg(not(tarpaulin))]
     impl Solution {
       $stub
     }
-  }
+  };
 }
 
 /// generate tests with given test cases.
