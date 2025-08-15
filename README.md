@@ -8,8 +8,9 @@ problems are categorized according to their difficulty and number as seen on
 LeetCode, and are located in their respective submodules, e.g. Two Sum is
 `easy::lc1`, Regular Expression Matching is located in `hard::lc10`, etc.
 
-each problem's module also include the base case tests from LeetCode, as well as
-additional failed tests during grading.
+each problem's module also include the base case tests from LeetCode, additional
+failed tests during grading, as well as other test cases to satisfy
+`cargo-tarpaulin`.
 
 ## dependencies
 
