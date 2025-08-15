@@ -15,11 +15,11 @@ macro_rules! solution {
     }
   ) => {
     #[allow(dead_code)]
-    #[cfg(not(tarpaulin))]
+    #[cfg(not(coverage))]
     struct Solution;
 
     #[allow(dead_code)]
-    #[cfg(not(tarpaulin))]
+    #[cfg(not(coverage))]
     impl Solution {
       $stub
     }

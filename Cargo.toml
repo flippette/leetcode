@@ -21,4 +21,4 @@ rust.unstable_features = "forbid"
 
 [lints.rust.unexpected_cfgs]
 level = "forbid"
-check-cfg = ["cfg(tarpaulin)"]
+check-cfg = ["cfg(coverage)"]

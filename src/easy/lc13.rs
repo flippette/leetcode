@@ -55,4 +55,6 @@ crate::tests! {
   case1:     "III" => 3,
   case2:   "LVIII" => 58,
   case3: "MCMXCIV" => 1994,
+  tail1:  "MMblah" => 2000,
+  tail2:   "Iroha" => 1,
 }
